@@ -1,0 +1,28 @@
+p {
+    color: red;
+}
+
+p.ex1 {
+    display: none;
+    background-color: green;
+    color: white;
+}
+
+p.ex2 {
+    display: inline;
+    background-color: red;
+    color: bisque;
+}
+
+p.ex3 {
+    display: block;
+    background-color: blue;
+    color: white;
+}
+
+p.ex4 {
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    height: 50px;
+}

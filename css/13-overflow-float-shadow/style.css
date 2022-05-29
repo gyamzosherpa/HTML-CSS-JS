@@ -1,0 +1,52 @@
+/* overflow */
+.scroll {
+    height: 100px;
+    width: 50%;
+    overflow: scroll;
+}
+
+.scroll>p {
+    background-color: brown;
+    color: white;
+}
+
+.hidden {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    /* overflow: visible; */
+    overflow: hidden;
+}
+
+/* float */
+
+.div1 p {
+    float: right;
+    padding: 10px;
+}
+
+.div1 img {
+    height: 200px;
+    float: right;
+}
+
+.div2 {
+    padding: 10px;
+    border: 2px solid red;
+    box-shadow: 10px 10px 5px blue inset;
+}
+
+.div3 {
+    float: left;
+    padding: 10px;
+    border: 2px solid green;
+}
+
+/* clear */
+
+.div4 {
+    padding: 10px;
+    border: 2px solid blue;
+    clear: left;
+    /* float: right; */
+}

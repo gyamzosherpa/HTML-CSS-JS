@@ -1,0 +1,74 @@
+.div1 {
+    background-color: blue;
+    height: 150px;
+    width: 200px;
+}
+
+.div1:hover {
+    background-color: yellow;
+}
+
+.div2 {
+    position: relative;
+    border: 2px solid green;
+    width: 120px;
+}
+
+.div2 p {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+}
+
+.div2:hover p {
+    visibility: visible;
+    display: block;
+    background-color: brown;
+    width: 200px;
+}
+
+p::first-line {
+    color: #c7b7b7;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: green;
+    font-size: 40px;
+    /* text-decoration: dashed;
+    text-transform: lowercase; */
+}
+
+/* ::selection {
+    color: lightblue;
+    background-color: chocolate;
+} */
+
+.div3 img {
+    opacity: 0.5;
+}
+
+.div3 img:hover {
+    opacity: 1;
+}
+
+.div4 ul {
+    list-style-type: none;
+}
+
+.div4 ul li:last-child {
+    background-color: brown;
+}
+
+.div4 ul li:nth-child(2) {
+    background-color: yellow;
+}
+
+.div4 ul li:nth-child(odd) {
+    font-size: 3rem;
+}

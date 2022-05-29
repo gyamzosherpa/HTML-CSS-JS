@@ -1,0 +1,59 @@
+.translate {
+    height: 10rem;
+    width: 10rem;
+    background-color: chocolate;
+    border: 1px solid black;
+    box-shadow: 10px 10px blue;
+
+    /* move 10px from left and 30px from its current position */
+    transform: translate(1rem, 3rem);
+}
+
+.translate2 {
+    height: 10rem;
+    width: 10rem;
+    background-color: chocolate;
+    border: 1px solid black;
+    box-shadow: 10px 10px blue;
+    transform: translateX(10rem);
+}
+
+.rotate {
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(59, 27, 4);
+    border: 1px solid black;
+    box-shadow: 10px 10px blue;
+    transform: rotate(55deg);
+}
+
+.scale {
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(59, 27, 4);
+    border: 1px solid black;
+    box-shadow: 5px 5px blue;
+    transform: scale(0.5);
+}
+
+.scale2 {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(59, 27, 4);
+    border: 1px solid black;
+    box-shadow: 5px 5px blue;
+
+    /*2 increases the width and 3 increases height*/
+    transform: scale(2, 3);
+}
+
+.skew {
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(170, 153, 141);
+    border: 1px solid black;
+    box-shadow: 5px 5px blue;
+
+    /* skew the element 30 degree in the x-axis and 10 degrees along the y-axis */
+    transform: skew(30deg, 20deg);
+}

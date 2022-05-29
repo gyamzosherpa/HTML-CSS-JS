@@ -1,0 +1,39 @@
+.center1 {
+    display: block;
+    margin: auto;
+    width: 40%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.center2 {
+    text-align: center;
+    border: 2px solid blue;
+    width: 70%;
+}
+
+.center3 img {
+    display: block;
+    height: 300px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center4 {
+    padding: 70px 0;
+    border: 3px solid blue;
+}
+
+.center5 {
+    line-height: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.center5 p {
+    line-height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}

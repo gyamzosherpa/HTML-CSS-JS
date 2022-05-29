@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*when we set "background-attachment:fixed", the image does not move */
+.background {
+    background-image: url("../../images/cv_img.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /* background-size: contain; */
+}
+
+/* shorthand */
+/* .background {
+    background: #ffff00 url("../../images/cv_img.png") no-repeat right top;
+} */
+
+/* double background */
+.div1 {
+    height: 100vh;
+    background-image: url(../../images/image4.jpg), url(../../images/image2.jpg);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    padding: 30px;
+    background-size: contain, contain;
+}
+
+.div1>h2,
+p {
+    background-color: chartreuse;
+    padding: 10px;
+    width: 30%;
+}

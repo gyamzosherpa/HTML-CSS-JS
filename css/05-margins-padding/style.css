@@ -1,0 +1,24 @@
+p {
+    background-color: lightblue;
+}
+
+.example {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+/* shorthand */
+/* margin:50px 100px 150px 200px
+ => top right bottom left */
+
+
+.example2 {
+    border: 2px solid blue;
+    background-color: grey;
+    padding-top: 50px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    padding-left: 90px;
+}

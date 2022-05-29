@@ -1,0 +1,26 @@
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 280px;
+    height: 280px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+.title {
+    padding: 30px;
+    text-align: center;
+}

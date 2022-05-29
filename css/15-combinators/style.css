@@ -1,0 +1,24 @@
+/* child selector */
+.div1>p {
+    background-color: grey;
+}
+
+section>p {
+    padding: 20px;
+    background-color: burlywood;
+}
+
+/* descendant selector */
+.div1 p {
+    font-size: 30px;
+}
+
+/* adjacent sibling and general sibling */
+.div2+p {
+    background-color: rgb(130, 68, 43);
+}
+
+/* general sibling */
+/* .div2~p {
+    background-color: blue;
+} */
