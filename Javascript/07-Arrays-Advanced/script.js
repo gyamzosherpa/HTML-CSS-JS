@@ -69,3 +69,26 @@ const currencies = new Map([
 currencies.forEach(function (value, key, map) {
   console.log(`${key} : ${value}`);
 });
+
+// reduce => reduce method returns a single value
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const total = number.reduce((acc, curr) => {
+  console.log(`acc: ${acc}`);
+  console.log(`curr: ${curr}`);
+  return acc + curr;
+});
+
+console.log(total);
+document.write(`<h1>Reduce, Total: ${total}</h1>`);
+
+// filter => filter method returns a new array
+const new_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const filterNumbers = new_numbers.filter((data) => data > 5);
+console.log(filterNumbers);
+document.write(`<h1>Filter Number: ${filterNumbers}</h1>`);
+
+// map => map method returns a new array
+const new_numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const mapNumbers = new_numbers2.map((data) => data * 2);
+console.log(mapNumbers);
+document.write(`<h1>Map Number: ${mapNumbers}</h1>`);

@@ -296,3 +296,146 @@ console.log(entries);
 for (const x of entries) {
   console.log(`on ${x[0]} he practise for ${x[1].in} hours`);
 }
+
+// 10. ----------------------SETS------------------------//
+// A JavaScript Set is a collection of unique values.
+// Each value can only occur once in a Set.
+// A Set can hold any value of any data type.
+
+const playerSet = new Set([
+  //creates a set
+  'gyamzo',
+  'messi',
+  'neymar',
+  'ronaldo',
+  'haaland',
+  'aguero',
+]);
+
+console.log(playerSet);
+
+console.log(new Set('sherpa')); //set are defined as new Set()
+
+console.log(playerSet.size); // returns the size of the set
+console.log(playerSet.has('messi')); //returns true if the value is present in the set
+console.log(playerSet.add('saka')); //adds a new value to the set
+console.log(playerSet.delete('neymar')); //deletes a value from the set
+
+// looping through sets
+for (const player of playerSet) {
+  console.log(player);
+}
+
+// convert set to array
+const staff = ['waiter', 'cook', 'cashier', 'cook', 'driver'];
+const staffUnique = [...new Set(staff)]; //convert into set and then convert into array
+console.log(staffUnique);
+
+console.log(
+  new Set(['waiter', 'cook', 'cashier', 'cook', 'driver', 'manager']).size
+); //set will not allow duplicates
+
+console.log(new Set('gyamzosherpa').size); //set will not allow duplicates
+
+// 12. ------------------------MAPS-----------------------//
+const rest = new Map(); //creates a map
+rest.set('name', 'classic gyamzo'); //adds a new key-value pair
+rest.set(1, 'gyamzo sherpa');
+rest.set(2, 'gyamzo sherpa2');
+console.log(rest.set(3, 'gyamzo sherpa3'));
+
+rest
+  .set('categories', ['asian', 'italian', 'dessert'])
+  .set('rating', 4.5)
+  .set('isOpen', true)
+  .set('isClose', false);
+
+console.log(rest.get('name'));
+console.log(rest.get('rating'));
+console.log(rest.get('isOpen'));
+console.log(rest.get(1));
+
+console.log(rest.has('rating')); //returns true if the key is present in the map
+//console.log(rest.delete(1)); //deletes a key-value pair
+
+console.log(rest.size); //returns the size of the map
+
+const arr3 = [1, 2];
+console.log(rest.set(arr3, 'Test')); //sets a key-value pair with a key that is an array
+
+console.log(rest.get(arr3)); //returns the value of the key that is an array
+
+//....maps iteration.......//
+const question = new Map([
+  ['question', 'What is the best programming language?'],
+  [1, 'C'],
+  [2, 'JavaScript'],
+  [3, 'Python'],
+  [4, 'Java'],
+  ['correct', 2],
+  [true, 'Correct 📍'],
+  [false, 'wrong'],
+]);
+
+console.log(question.get('question')); //returns the value of the key 'question'
+for (const [key, value] of question) {
+  //looping through maps
+  if (typeof key === 'number') {
+    //if the key is a number
+    console.log(`Answer ${key}: ${value}`); //returns the value of the key 'question'
+  }
+}
+
+// const answer = Number(prompt('What is the correct answer?'));
+const answer = 2;
+console.log(answer);
+
+console.log(question.get(question.get('correct') === answer));
+
+//convert map to array
+console.log([...question]); //convert map to array
+console.log([...question.keys()]); //convert map keys to array
+console.log([...question.values()]); //convert map values to array
+
+// 14. ---------Working with Strings Part-1---------//
+const movie = 'kabaddi kabaddi';
+const actor = 'dayahang rai';
+console.log(movie.startsWith('Kabaddi')); //returns true if the string starts with the given string
+console.log(movie[0]); //returns the character at the given index
+console.log(movie.indexOf('a')); //returns the index of the first occurrence of the given string
+console.log(movie.lastIndexOf('a')); //returns the index of the last occurrence of the given string
+
+// slice method returns a new string that is a portion of the original string
+console.log(movie.slice(1, 5)); //returns the characters from the given start index to the given end index
+console.log(actor.slice(5)); //ang rai
+
+console.log(movie.slice(0, movie.indexOf(' '))); //returns the characters from the given start index to the given end index
+console.log(movie.slice(-2)); //returns the last two characters
+
+//lets play some fun game
+const checkSeat = function (seat) {
+  const s = seat.slice(-2); //returns the last two characters
+  if (s === 'BB' || s === 'CC') {
+    console.log('you got the seat');
+  } else {
+    console.log('sorry no ticket left');
+  }
+};
+
+checkSeat('11BB');
+checkSeat('11A');
+checkSeat('11CC');
+
+// some string methods //
+console.log(movie.toUpperCase()); //returns the string in upper case
+console.log(actor.toLowerCase()); //returns the string in lower case
+
+console.log(movie.includes('kabaddi')); //returns true if the string contains the given string
+console.log(movie.startsWith('kabaddi')); //returns true if the string starts with the given string
+
+//split and join methods
+console.log('a+very_nice+movie'.split('+')); //returns an array of substrings
+
+const [firstName, lastName] = 'gyamzo sherpa'.split(' ');
+const newName = ['Mr.', firstName, lastName].join(' '); //returns a string with the elements of the array joined by the given separator
+console.log(newName);
