@@ -33,7 +33,9 @@
 .div2 {
     padding: 10px;
     border: 2px solid red;
-    box-shadow: 10px 10px 5px blue inset;
+
+    /* horizontal, vertical, blur, color , inset means inside */
+    box-shadow: 10px 5px 50px inset;
 }
 
 .div3 {

@@ -1,4 +1,4 @@
-// 5 falsy values: 0, ' ', undefined, null , Nan
+// five falsy values: 0, ' ', undefined, null , Nan
 
 console.log(Boolean(0)); // false
 console.log(Boolean(undefined)); // false

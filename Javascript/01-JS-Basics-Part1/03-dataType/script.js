@@ -24,3 +24,6 @@ console.log(typeof first_name);
 //null
 const age = null;
 console.log(age);
+
+const new_name = 'John';
+console.log('new_name is ' + new_name);

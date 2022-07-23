@@ -15,7 +15,7 @@
     background-color: chocolate;
     border: 1px solid black;
     box-shadow: 10px 10px blue;
-    transform: translateX(10rem);
+    transform: translateX(12rem);
 }
 
 .rotate {
@@ -33,7 +33,7 @@
     background-color: rgb(59, 27, 4);
     border: 1px solid black;
     box-shadow: 5px 5px blue;
-    transform: scale(0.5);
+    transform: scale(.5);
 }
 
 .scale2 {
@@ -54,6 +54,6 @@
     border: 1px solid black;
     box-shadow: 5px 5px blue;
 
-    /* skew the element 30 degree in the x-axis and 10 degrees along the y-axis */
-    transform: skew(30deg, 20deg);
+    /* skew the element 30 degree in the x-axis and 20 degrees along the y-axis */
+    transform: skew(30deg, 10deg);
 }

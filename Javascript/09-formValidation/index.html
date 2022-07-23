@@ -4,38 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Validation</title>
+    <title>Document</title>
   </head>
   <body>
-    <h1>Form validation</h1>
-    <form action="">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        onkeyup="fnameValidate()"
-      /><br />
-      <span id="messageForName"></span>
+    <!-- form validation -->
+    <div id="error"></div>
+    <form id="form" action="" method="GET">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+      </div>
 
-      <!-- <label for="email">Email:</label>
-      <input type="text" id="email" name="email" /><br />
-      <span id="messageForEmail"></span>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required />
+      </div>
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" /><br />
-      <span id="messageForPassword"></span>
-
-      <label for="confirm-password">Confirm Password:</label>
-      <input
-        type="password"
-        id="confirm-password"
-        name="confirm-password"
-      /><br />
-      <span id="messageForConfirmPassword"></span> -->
-
-      <input type="submit" value="Submit" />
+      <button type="submit">Submit</button>
     </form>
+
     <script src="./script.js"></script>
   </body>
 </html>

@@ -18,5 +18,7 @@
     background-color: brown;
     color: white;
     height: 100px;
-    width: min(400px, 300px);
+
+    /* left, right */
+    width: min(100px, 400px);
 }

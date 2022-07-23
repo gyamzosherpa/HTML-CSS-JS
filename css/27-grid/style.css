@@ -22,7 +22,7 @@
     margin-top: 2rem;
     display: grid;
     grid-template-columns: max-content max-content max-content;
-    grid-gap: 10px;
+    grid-gap: 100px;
     background-color: #21f3b8;
     padding: 10px;
 }
@@ -39,8 +39,8 @@
 
 .grid-container4 {
     display: grid;
-    grid: 100px / auto auto auto;
-    grid-gap: 10px;
+    grid: 200px 100px / auto auto auto;
+    grid-gap: 100px;
     background-color: #2196F3;
     padding: 10px;
 }
